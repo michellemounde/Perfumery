@@ -1,5 +1,5 @@
 # H1 headers & all other headers
-Font:  Space Mono/Poiret One, strong, above medium to extra large
+Font:  Poiret One, strong, large to extra extra large
 Font color: #303433
 Text underlined with color #474D43
 

@@ -11,28 +11,47 @@ body {
     linear-gradient(to top right, rgba(3, 13, 22, 0.6), rgba(3, 13, 22, 0.6) 90%),
     linear-gradient(to top left, rgb(87, 8, 82, 1), rgba(87, 8, 82, 1) 90%);
   background-color: #4D0026;
-  height: 100vh;
+  box-sizing: border-box;
+  min-height: 100vh;
   margin: 1%;
-  padding: 2.5%;
+  padding: 1%;
   display: flex;
-  flex-flow: column wrap;
-  flex: 1;
+  flex-flow: column nowrap;
   align-items: center;
   justify-content: space-evenly;
 }
 
 footer {
-  margin-top: auto;
-  align-self: baseline;
-  max-width: 100vw;
+  flex-shrink: 0;
+  width: 100%;
+  align-self: end;
+}
+
+.info {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  flex: 1 1;
+  gap: 1vh;
+}
+
+.socials {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  flex: 1 1;
+  gap: 2vw;
+  margin: 2.5%;
 }
 
 main {
+  flex: 1;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
   gap: 1vmin 2vmax;
-  max-width: 80vw;
+  max-width: 80%;
+  margin: 0.5%;
+  padding: 0.5%;
 }
 
 h1,
@@ -54,7 +73,15 @@ h2 {
 }
 
 .nav {
-  width: 100vw;
+  width: 100%;
+  padding: 1% 0%;
+}
+
+nav {
+  text-transform: uppercase;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
 .img-content img {
@@ -73,20 +100,102 @@ h2 {
   width: 18vw;
 }
 
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin-bottom: 15%;
+}
+
+.news-research a {
+  background-color: #C850B0;
+  box-shadow: 0 5px 0 #0E3659;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.news-research a:hover,
+.news-research a:focus {
+  background-color: #1E73BE;
+}
+
+.news-research a:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+.nav a,
+footer a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
 a:link {
   color: #FFFFFF;
 }
 
 a:visited {
-  color:rgb(88, 219, 27);
+  color:rgb(200, 255, 0);
 }
 
 a:hover,
 a:focus {
-  color:rgb(27, 219, 219);
+  color:rgb(7, 241, 222);
   cursor: pointer;
 }
 
 a:active {
-  color:rgb(223, 163, 95);
+  color:rgb(182, 165, 230);
+}
+
+form {
+  justify-self: center;
+}
+
+input,
+textarea {
+  color: black;
+}
+
+fieldset {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1vh;
+}
+
+fieldset label::after {
+  content: ":";
+}
+
+.checkbox::after {
+  content: "";
+}
+
+#review-submit {
+  background-color: #1E73BE;
+}
+
+/* Scrollbar styling */
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #BEBEBE black;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: black;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #BEBEBE;
+  border-radius: 20px;
+  border: 1.5px solid #B8005C;
 }

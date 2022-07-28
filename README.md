@@ -3,7 +3,7 @@
 Perfumery is a perfume web application that allows users to explore different types of perfumes from different brands, read and write perfume reviews, engage with a community of fellow perfume enthusiasts and read the latest news and research on perfume. The user can add a rating for their favourite perfume and read news and research on the latest perfumes.
 
 ## Demo
-Use this gif as an example of how the app should work.
+Use this video as an example of how the app should work.
 
 [Perfumery Demo](https://www.loom.com/share/d34da50d13aa4ddc90ad75de82d292b9?raw=true "Perfumery Demo")
 
